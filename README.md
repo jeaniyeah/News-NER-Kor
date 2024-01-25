@@ -1,10 +1,12 @@
 ## Project 
 The model trained with this code recognizes named entities in input sentences and predicts one label from a set of 150 labels for each named entity, thereby performing labeling for the input sentences.  
-datasetLabeling: Code for labeling the 2022 Named Entity Analysis Corpus provided by the National Institute of Korean Language.   
-train: Code for fine-tuning a base model using the provided dataset.   
-base model: https://huggingface.co/xlm-roberta-large-finetuned-conll03-english  
-dataset: https://huggingface.co/datasets/yeajinmin/NER-News-BIDataset   
-For dataset details, please refer to the README in the provided link above.   
+- datasetLabeling: Code for labeling the 2022 Named Entity Analysis Corpus provided by the National Institute of Korean Language.   
+- train: Code for fine-tuning a base model using the provided dataset.   
+- base model: https://huggingface.co/xlm-roberta-large-finetuned-conll03-english  
+- dataset: https://huggingface.co/datasets/yeajinmin/NER-News-BIDataset   
+For dataset details, please refer to the README in the provided link above.
+For model details, please check the link below.
+- model(ReadMe): https://huggingface.co/yeajinmin/NER-NewsBI-150142-e3b4/blob/main/README.md  
 
 ## Labeling Method
 a. If '_' is a standalone token at the beginning, it is excluded and labeled. This is exemplified by excluding the 6th token in the provided code.  
