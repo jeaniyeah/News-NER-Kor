@@ -6,7 +6,16 @@ The model trained with this code recognizes named entities in input sentences an
 - dataset: https://huggingface.co/datasets/yeajinmin/NER-News-BIDataset   
 For dataset details, please refer to the README in the provided link above.
 For model details, please check the link below.
-- model(ReadMe): https://huggingface.co/yeajinmin/NER-NewsBI-150142-e3b4/blob/main/README.md  
+- model(ReadMe): https://huggingface.co/yeajinmin/NER-NewsBI-150142-e3b4/blob/main/README.md
+
+## Why News Datasets?  
+The news articles contain various named entities. These names are often long and complex, so articles sometimes abbreviate them or people may find it difficult to know institution names or personal names accurately. However, people want to know what these various entities have done, so they search for or read articles.   
+
+A model trained with NER tagging on news datasets has been started with the idea that it could be very helpful for people when searching for articles.  
+
+For example, the subject of "suffered damage" can be various named entities. Let's assume we only want to find cases where educational institutions suffered damage. Current article searches are limited to keyword combinations like 'education' + 'damage'. However, using this model, it is possible to specify the type of entity and search using keywords. For instance, with 'OGG_EDUCATION(NER label)' + 'suffered damage', users can conduct more intuitive searches.  
+
+Nowadays, it's difficult to allocate time to read and understand entire news articles. Categorizing entities in news articles with many occurrences of complex named entities helps readers efficiently grasp the necessary information. Additionally, such models can be useful for students completing assignments or investigating real-life cases.  
 
 ## Labeling Method
 a. If '_' is a standalone token at the beginning, it is excluded and labeled. This is exemplified by excluding the 6th token in the provided code.  
